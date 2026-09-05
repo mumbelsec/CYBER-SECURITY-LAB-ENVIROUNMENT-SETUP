@@ -116,3 +116,21 @@ The VM network adapter was configured as follows:
 | Adapter Type | Intel PRO/1000 MT Desktop |
 
 The VM was allocated: RAM: 1.9 GB
+![Kali Linux Home Screen](KALIHOME.jpg)
+After that, a shared folder was also configured for transferring required files between the host operating system and the Kali VM.
+
+### Step 5. Configure the Kali Linux Network
+The Kali Linux network configuration was checked and configured with a consistent IPv4 address.
+
+**Example configuration:**
+
+| Setting | Value |
+|---|---|
+| IP Address | `10.0.0.2` |
+| Subnet Mask | `255.255.255.0` |
+| Gateway | `10.0.0.1` |
+| DNS | `8.8.8.8` |
+
+A consistent IP address makes it easier to document the lab and reference the Kali machine in future exercises.
+
+
