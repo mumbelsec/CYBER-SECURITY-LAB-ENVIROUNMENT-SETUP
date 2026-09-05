@@ -55,10 +55,27 @@ It can be used for the following activities;
 
 ## 🏗️ Lab Architecture
 
-The lab consists of the following components:
+![Lab Architecture](architechture.png)
 
 
 
 
 
 The lab is configured on a private virtual network so that additional machines can be added later and used as targets for authorized security testing.
+
+## ⚙️ Lab Configuration
+
+| 🔧 Component | ⚙️ Configuration |
+|---|---|
+| 🖥️ Host OS | Windows 10 pro |
+| 🧠 Host RAM | 4 GB |
+| ⚡ Processor | Intel Core i7 |
+| 📦 Hypervisor | VirtualBox 7.2.16 |
+| 🐉 Security OS | Kali Linux 2026.2 |
+| 🧠 Kali RAM | 1.9 GB |
+| 🌐 Virtual Network | NAT Network |
+| 📡 Network Address | 10.0.0.0/24 |
+| ⬆️ Kali IP Address | 10.0.0.2/24 |
+| 🖥️ Default Gateway | 10.0.0.1 |
+| 🌍 DNS Server | 8.8.8.8 |
+| 🧩 Future VM Range | 10.0.0.3–10.0.0.99 |
