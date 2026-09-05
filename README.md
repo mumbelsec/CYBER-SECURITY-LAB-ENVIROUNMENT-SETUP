@@ -36,7 +36,7 @@ The main objectives of this project are to:
 - Take a clean VM snapshot for recovery.
 - Document the complete setup process.
 - Prepare the environment for future cybersecurity projects.
-- 
+  
 ## 🛡️ Purpose of the Lab
 
 The lab provides an isolated and controlled environment for cybersecurity learning and authorized security testing.
@@ -79,3 +79,22 @@ The lab is configured on a private virtual network so that additional machines c
 | 🖥️ Default Gateway | 10.0.0.1 |
 | 🌍 DNS Server | 8.8.8.8 |
 | 🧩 Future VM Range | 10.0.0.3–10.0.0.99 |
+
+## 🛠️ Lab Setup Procedure
+
+### Step 1. Install 7-Zip
+7-Zip was installed to extract the Kali Linux virtual-machine package, which may be distributed as a `.7z` archive.
+
+**Tool:** 7-Zip was used
+
+### Step 2. Install VirtualBox
+Installation of VirtualBox as the hypervisor.
+
+### Step 3. Create the NAT Network
+Creation of dedicated NAT Network in VirtualBox.
+
+**Configuration:**
+- Network Name: `NatNetwork`
+- IPv4 Prefix: `10.0.0.0/24`
+- DHCP: Enabled
+- IPv6: Disabled
