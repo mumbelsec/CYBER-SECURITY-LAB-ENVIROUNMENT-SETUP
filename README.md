@@ -132,5 +132,6 @@ The Kali Linux network configuration was checked and configured with a consisten
 | DNS | `8.8.8.8` |
 
 A consistent IP address makes it easier to document the lab and reference the Kali machine in future exercises.
+![Kali Network Configuration](kalinet.jpg)
 
 
