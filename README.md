@@ -102,3 +102,17 @@ Creation of dedicated NAT Network in VirtualBox.
 A NAT Network was selected because multiple virtual machines connected to the same NAT Network can communicate with one another while also having outbound network connectivity.
 
 This will allow future attacker and target VMs to communicate within the lab.
+
+### Step 4. Import Kali Linux
+The Kali Linux virtual machine was downloaded from the official Kali Linux website and imported into VirtualBox.
+
+The VM network adapter was configured as follows:
+
+| Setting | Value |
+|---|---|
+| Adapter 1 | Enabled |
+| Attached to | NAT Network |
+| Network | `NatNetwork` |
+| Adapter Type | Intel PRO/1000 MT Desktop |
+
+The VM was allocated: RAM: 1.9 GB
