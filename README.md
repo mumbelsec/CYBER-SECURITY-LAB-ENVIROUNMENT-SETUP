@@ -134,4 +134,43 @@ The Kali Linux network configuration was checked and configured with a consisten
 A consistent IP address makes it easier to document the lab and reference the Kali machine in future exercises.
 ![Kali Network Configuration](kalinet.jpg)
 
+### Step 6. Create a Clean VM Snapshot
+After completing the initial configuration, a VirtualBox snapshot was created.
+
+**snapshot name:**
+
+`snap 1`
+
+The snapshot represents the clean baseline of the laboratory.
+
+If a future exercise changes or damages the VM configuration, the machine can be restored to this baseline.
+
+## 🔎 Lab Verification
+
+| ✅ Test | 🧾 Command | 🎯 Expected Result |
+|---|---|---|
+| 🌐 Check IP address | `ip a` | Correct Kali IP displayed |
+| 📡 Test gateway | `ping 10.0.0.1` | Successful replies |
+| 🌍 Test Internet connectivity | `ping 8.8.8.8` | Successful replies |
+| 🔎 Test DNS resolution | `nslookup networkwalks.com` | Domain resolves |
+| 🧰 Verify Nmap | `nmap --version` | Nmap version displayed |
+| 🔄 Verify snapshot | Restore snapshot and run `ip a` | Baseline configuration restored |
+
+## 🐞 Problems Encountered & Solutions
+
+| ⚠️ Problem | 🛠️ Solution |
+### Problem 1. VirtualBox VT-x / Virtualization Error
+The VM initially failed to start because hardware virtualization was disabled in the system firmware/BIOS.
+
+The issue was resolved by:
+
+1. Restarting the computer.
+2. Entering BIOS/UEFI settings.
+3. Enabling Intel VT-x / hardware virtualization.
+4. Saving the configuration.
+5. Restarting the computer.
+6. Starting the Kali VM again.
+
+After enabling virtualization, the VM started successfully.
+
 
