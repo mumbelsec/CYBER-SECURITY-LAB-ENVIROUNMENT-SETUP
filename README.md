@@ -175,4 +175,61 @@ After enabling virtualization, the VM started successfully.
 ![VT-x Virtualization Fix](tx.jpg)
 Enable visualization technology then save and continue.
 
+### Problem 2. Internet Connectivity After Static IP Configuration
+After solving the first problem, i started the machine but had serious network issues so i used the below code to reset my connection:
+
+sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
+
+After the reset, I rebooted and tested my connection and it was up and running.
+
+## 💡 Lessons Learnt
+
+Through this project, I learned how to create and configure a virtual environment for cybersecurity practice.
+
+The most important things I learned include:
+
+### 1. Differences Between NAT and NAT Network
+A standard NAT configuration and a NAT Network serve different purposes.
+
+A NAT Network allows multiple VMs connected to the same virtual network to communicate with one another while providing network address translation for external connectivity.
+
+This makes it useful for building a multi-machine cybersecurity laboratory while, NAT Each VM gets its own private, isolated network — invisible to other VMs. It can reach the internet, but VMs on plain NAT cannot see or communicate with each other, even if they're on the same host. Each VM is essentially in its own separate bubble.
+
+### 2. Virtual Machine Networking
+I learned how VirtualBox virtual network adapters connect virtual machines to different types of networks and how network configuration affects communication between machines.
+
+### 3. Static IP Configuration
+I learned how to configure and verify IPv4 addressing, subnet masks, gateways, and DNS settings in Kali Linux.
+
+### 4. VM Snapshots
+I learned that a clean snapshot should be created before performing risky or experimental activities.
+
+This provides a known-good recovery point for future cybersecurity exercises.
+
+### 5. Documentation
+I learned that documenting commands, configuration, screenshots, problems, and solutions is an important part of a professional cybersecurity project.
+
+## 🔐 Security & Ethical Use
+
+This laboratory is intended strictly for educational purposes only.
+
+- Do not use this lab or its tools to attack systems you do not own or have explicit permission to test.
+- All scanning, exploitation, and testing activities must remain within the isolated lab environment.
+- This project follows ethical hacking principles and is not intended to facilitate unauthorized access to any system or network.
+- violations may result to legal punishment
+
+## 👤 Author
+
+**mumbelsec**
+
+Cybersecurity Professional B083
+
+LinkedIn: https://www.linkedin.com/in/mumbelsec
+
+## 📌 Project Information
+
+**Program Name:** Cybersecurity at Networkwalks
+**Week:** 01
+**Project:** Cybersecurity & Pentesting Lab Setup
+**Repository:** GitHub
 
