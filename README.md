@@ -172,5 +172,7 @@ The issue was resolved by:
 6. Starting the Kali VM again.
 
 After enabling virtualization, the VM started successfully.
+![VT-x Virtualization Fix](tx.jpg)
+Enable visualization technology then save and continue.
 
 
