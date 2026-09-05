@@ -224,7 +224,7 @@ This laboratory is intended strictly for educational purposes only.
 
 Cybersecurity Professional B083
 
-LinkedIn: https://www.linkedin.com/in/mumbelsec
+LinkedIn: https://www.linkedin.com/pulse/cyber-security-lab-envirounment-set-up-ibrahim-muhammad-c5lme
 
 ## 📌 Project Information
 
